@@ -1,0 +1,55 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+.header
+{
+	font-family:Roboto;
+}
+
+body
+{
+	margin:14px;
+}
+
+.container-form
+{
+	text-align: center;
+	width:25%;
+	margin:0 auto;
+}
+
+.head-form
+{
+	color:#fcfcfc;
+	text-align: left;
+	padding:8px;
+	background-color: #171616;
+}
+
+.body-form
+{
+	margin:0 auto;
+	padding:14px;
+	display:grid;
+	border:1px solid black;
+	
+}
+
+form
+{
+	display:grid;
+	gap:14px;
+}
+
+input
+{
+	padding:8px;
+}
+
+button
+{
+	color:#fcfcfc;
+	padding:8px;
+	background-color: #171616;
+}
