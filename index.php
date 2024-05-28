@@ -19,12 +19,12 @@
 				</div>
 
 				<div class="body-form">
-					<form mothod="post">
+					<form action="valida_login.php" method="post">
 						<div class="email-form">
-							<input type="email" name="email" placeholder="Email">
+							<input name="email" type="email" placeholder="Email">
 						</div>
 						<div class="senha-form">
-							<input type="password" name="senha" placeholder="Senha">
+							<input name="senha" type="password" placeholder="Senha">
 						</div>
 						<div>
 							<button type="submit">Entrar</button>
