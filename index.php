@@ -1,4 +1,7 @@
 <!DOCTYPE html>
+
+
+
 <html>
 	<head>
 		<meta charset="utf-8">
@@ -15,7 +18,15 @@
 			<div class="container-form">
 
 				<div class="head-form">
-					<h3>Login</h3>
+					<?php
+	
+						$msg_error = '';
+
+						if(isset($_GET['login']) &&  $_GET['login'] == 'erro') // isset() pode ser usado para verificar se um indice existe dentro do array
+							echo '<h3 class="Error">Erro: Verifique as informações e tente novamente</h3>';
+						else
+							echo '<h3>Login</h3>';
+					?>
 				</div>
 
 				<div class="body-form">

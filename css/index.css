@@ -27,6 +27,11 @@ body
 	background-color: #171616;
 }
 
+.Error
+{
+	color:red;
+}
+
 .body-form
 {
 	margin:0 auto;
