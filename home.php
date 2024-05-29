@@ -7,8 +7,6 @@
 	{
 		header('Location:index.php?login=erro2');
 	}
-
-	echo 'AUTENTICADO'; 
 ?>
 
 <html>
@@ -18,6 +16,15 @@
 		<title></title>
 	</head>
 	<body>
-		HOME
+		<div class="head">
+			<h1> App Help Desk </h1>
+		</div>
+
+		<div class="Menu">
+	
+			<div><a href="">Abrir chamado</a></div>
+			<div><a href="">Localizar chamado</a></div>
+		</div>
+
 	</body>
 </html>
