@@ -1,7 +1,5 @@
 <!DOCTYPE html>
 
-
-
 <html>
 	<head>
 		<meta charset="utf-8">
@@ -18,15 +16,7 @@
 			<div class="container-form">
 
 				<div class="head-form">
-					<?php
-	
-						$msg_error = '';
-
-						if(isset($_GET['login']) &&  $_GET['login'] == 'erro') // isset() pode ser usado para verificar se um indice existe dentro do array
-							echo '<h3 class="Error">Erro: Verifique as informações e tente novamente</h3>';
-						else
-							echo '<h3>Login</h3>';
-					?>
+					<h3>Login</h3>
 				</div>
 
 				<div class="body-form">
@@ -37,6 +27,15 @@
 						<div class="senha-form">
 							<input name="senha" type="password" placeholder="Senha">
 						</div>
+
+						<?php if(isset($_GET['login']) &&  $_GET['login'] == 'erro'){ ?>
+							<div class="error"> Usuário ou senha inválidos </div>
+						<?php } ?>
+
+						<?php if(isset($_GET['login']) &&  $_GET['login'] == 'erro2'){ ?>
+							<div class="error"> Faça login antes de acessar as páginas protegidas</div>
+						<?php } ?>
+
 						<div>
 							<button type="submit">Entrar</button>
 						</div>
