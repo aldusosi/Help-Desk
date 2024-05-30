@@ -1,12 +1,7 @@
 <!DOCTYPE html>
 
 <?php 
-	session_start();
-
-	if(!isset($_SESSION['autenticado']) || $_SESSION['autenticado'] == 'NAO')
-	{
-		header('Location:index.php?login=erro2');
-	}
+	require_once 'validador_acesso.php';
 ?>
 
 <html>
@@ -22,8 +17,8 @@
 
 		<div class="Menu">
 	
-			<div><a href="">Abrir chamado</a></div>
-			<div><a href="">Localizar chamado</a></div>
+			<div><a href="abrir_chamado.php">Abrir chamado</a></div>
+			<div><a href="consultar_chamado.php">Consultar chamado</a></div>
 		</div>
 
 	</body>
