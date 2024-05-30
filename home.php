@@ -19,6 +19,7 @@
 	
 			<div><a href="abrir_chamado.php">Abrir chamado</a></div>
 			<div><a href="consultar_chamado.php">Consultar chamado</a></div>
+			<div><a href="logoff.php">Sair</a></div>
 		</div>
 
 	</body>
