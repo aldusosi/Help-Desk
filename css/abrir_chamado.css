@@ -1,0 +1,44 @@
+*{
+	margin:0;
+	padding:0;
+}
+
+.header
+{
+	font-family:Roboto;
+}
+
+body
+{
+	margin:14px;
+}
+
+.container-form
+{
+	margin-top:14px;
+	width:max-content;
+	display:grid;
+}
+.head-form
+{
+	color:#ffffff;
+	padding:8px;
+	background-color: #000000;
+	border:1px solid black;
+}
+.body-form
+{
+	display:grid;
+	padding:8px;
+	border:1px solid black;
+	gap:14px;
+}
+textarea 
+{
+  width: 450px;
+  height: 150px;
+}
+button
+{
+	width:250px;
+}
