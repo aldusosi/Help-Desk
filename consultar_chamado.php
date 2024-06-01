@@ -1,4 +1,23 @@
-<?php require_once 'validador_acesso.php' ?>
+<?php 
+	require_once 'validador_acesso.php'; 
+
+	$arquivo = fopen('arquivo.hd', "r");
+
+	$chamados = array();
+
+	while(!feof($arquivo))
+	{
+		$registro = fgets($arquivo);
+
+		$chamados[] = $registro;
+		
+		
+	};
+
+	fclose($arquivo);
+
+	//fread($arquivo, filesize($arquivo));
+?>
 
 <!DOCTYPE html>
 <html>
@@ -19,16 +38,24 @@
 					<h3>Consultar Chamado</h3>
 				</div>
 				<div class="container-body">
-					<div class="chamado">
-						<h2>Título</h2>
-						<h3>Categoria</h3>
-						<p>Descricao</p>
-					</div>
-					<div class="chamado">
-						<h2>Título</h2>
-						<h3>Categoria</h3>
-						<p>Descricao</p>
-					</div>
+
+					<?php foreach ($chamados as $chamado) { ?>
+						<?php
+							$chamado_dados = explode('#', $chamado);
+						?>
+
+						<?php if($chamado_dados[0]){?>
+							<div class="chamado">
+								<?php 
+								echo "<h2>$chamado_dados[0]</h2>";
+								echo "<h3>$chamado_dados[1]</h3>";
+								echo "<p>$chamado_dados[2]</p>";
+								?>
+							</div>
+						<?php }?>
+
+					<?php } ?>
+
 				</div>
 			</div>
 		</div>
