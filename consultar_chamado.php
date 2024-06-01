@@ -40,19 +40,23 @@
 				<div class="container-body">
 
 					<?php foreach ($chamados as $chamado) { ?>
-						<?php
-							$chamado_dados = explode('#', $chamado);
-						?>
 
-						<?php if($chamado_dados[0]){?>
+						<?php
+							
+							$chamado_dados = explode('#', $chamado);
+
+							if(count($chamado_dados) < 3)
+							continue;
+						?>
+							
 							<div class="chamado">
-								<?php 
-								echo "<h2>$chamado_dados[0]</h2>";
-								echo "<h3>$chamado_dados[1]</h3>";
-								echo "<p>$chamado_dados[2]</p>";
-								?>
+							
+								<h2><?= $chamado_dados[0] ?></h2>
+								<h3><?= $chamado_dados[1] ?></h3>
+								<p><?= $chamado_dados[2] ?></p>
+								
 							</div>
-						<?php }?>
+						
 
 					<?php } ?>
 
