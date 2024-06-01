@@ -61,6 +61,11 @@
 					<?php } ?>
 
 				</div>
+
+				<div class="container-buttons">
+					<a href="home.php">Voltar</a>
+				</div>
+
 			</div>
 		</div>
 	</body>

@@ -44,7 +44,7 @@
 						</div>
 
 						<div class="container-buttons">
-							<button>Voltar</button>
+							<a href="home.php">Voltar</a>
 							<button type="submit">Abrir</button>
 						</div>
 
