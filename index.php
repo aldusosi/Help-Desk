@@ -6,30 +6,34 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title></title>
 		<link rel="stylesheet" type="text/css" href="./css/index.css">
+		<link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
 	</head>
 	<body>
 		<div class="header">
-			<h1>App Help Desk</h1>
+			<h1 class="weigt-bold">App Help Desk</h1>
 		</div>
 
 		<div class="body">
 			<div class="container-form">
 
-				<div class="head-form">
-					<h3>Login</h3>
+				<div class="card-header bg-dark">
+					<h3 class="text-light">Login</h3>
 				</div>
 
-				<div class="body-form">
-					<form action="valida_login.php" method="post">
-						<div class="email-form">
-							<input name="email" type="email" placeholder="Email">
+				<div class="card-footer bg-light">
+					<form class="was-validated" action="valida_login.php" method="post">
+						<div class="from-group">
+							<input class="form-control" name="email" type="email" placeholder="Email" required>
+							<div class="invalid-feedback">Please fill out this field.</div>
 						</div>
-						<div class="senha-form">
-							<input name="senha" type="password" placeholder="Senha">
+
+						<div class="form-group">
+							<input class="form-control" name="senha" type="password" placeholder="Senha" required>
+							<div class="invalid-feedback">Please fill out this field.</div>
 						</div>
 
 						<?php if(isset($_GET['login']) &&  $_GET['login'] == 'erro'){ ?>
-							<div class="error"> Usuário ou senha inválidos </div>
+							<div> <p class="text-danger">Usuário ou senha inválidos</p>  </div>
 						<?php } ?>
 
 						<?php if(isset($_GET['login']) &&  $_GET['login'] == 'erro2'){ ?>
@@ -37,7 +41,7 @@
 						<?php } ?>
 
 						<div>
-							<button type="submit">Entrar</button>
+							<button class="btn btn-outline-dark" type="submit">Entrar</button>
 						</div>
 					</form>
 				</div>
