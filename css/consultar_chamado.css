@@ -18,7 +18,9 @@ body
 
 .container-head
 {
+	color:#ffffff;
 	padding:8px;
+	background-color: #000000;
 	border:1px solid black;
 }
 
