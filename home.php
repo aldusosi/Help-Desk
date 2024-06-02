@@ -11,15 +11,14 @@
 		<title></title>
 	</head>
 	<body>
-		<div class="head">
-			<h1> App Help Desk </h1>
-		</div>
+		<?php require_once "./js/header.php"; ?>
 
-		<div class="Menu">
+		<h2 class="pl-3">Home</h2>
+
+		<div class="d-flex justify-content-center gap-3">
 	
-			<div><a href="abrir_chamado.php">Abrir chamado</a></div>
-			<div><a href="consultar_chamado.php">Consultar chamado</a></div>
-			<div><a href="logoff.php">Sair</a></div>
+			<div class="p-2"><a class="btn btn-outline-dark" href="abrir_chamado.php">Abrir chamado</a></div>
+			<div class="p-2"><a class="btn btn-outline-dark" href="consultar_chamado.php">Consultar chamado</a></div>
 		</div>
 
 	</body>

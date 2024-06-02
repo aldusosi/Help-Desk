@@ -7,18 +7,18 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Abrir Chamado</title>
 		<link rel="stylesheet" type="text/css" href="./css/abrir_chamado.css">
+		<link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
 	</head>
 	<body>
-		<div class="header">
-			<h1>App Help Desk</h1> 
-		</div>
+		
+		<?php require_once "./js/header.php"; ?>
 
-		<div class="body-content">
+		<div class="body-content ml-3">
 			<div class="container-form">
-				<div class="head-form">
-					<h3>Abrir Chamado</h3>
+				<div class="card-header bg-dark">
+					<h3 class="text-light">Abrir Chamado</h3>
 				</div>
-				<div class="body-form">
+				<div class="card-footer">
 					<form method="post" action="registra-chamado.php">
 						<div>
 							<div><label name="titulo">Titulo</label></div>
@@ -43,14 +43,14 @@
 							<div><textarea cols="450" name="descricao"></textarea></div>					
 						</div>
 
-						<div class="container-buttons">
-							<a href="home.php">Voltar</a>
-							<button type="submit">Abrir</button>
+						<div class="container-buttons mt-3">
+							<a class="btn btn-outline-dark" href="home.php"><< Voltar</a>
+							<button class="btn bg-dark text-light" type="submit">Abrir</button>
 						</div>
 
 						<?php if(isset($_GET['chamado']) && $_GET['chamado'] == 'feito'){?>
 
-							<div>
+							<div class="text-success">
 								O chamado foi feito com sucesso, em breve responderemos.  
 							</div>
 

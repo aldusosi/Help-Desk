@@ -9,9 +9,8 @@
 		<link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
 	</head>
 	<body>
-		<div class="header">
-			<h1 class="weigt-bold">App Help Desk</h1>
-		</div>
+		
+		<?php require_once "./js/header.php"; ?>
 
 		<div class="body">
 			<div class="container-form">
@@ -21,7 +20,7 @@
 				</div>
 
 				<div class="card-footer bg-light">
-					<form class="was-validated" action="valida_login.php" method="post">
+					<form action="valida_login.php" method="post">
 						<div class="from-group">
 							<input class="form-control" name="email" type="email" placeholder="Email" required>
 							<div class="invalid-feedback">Please fill out this field.</div>
@@ -41,7 +40,7 @@
 						<?php } ?>
 
 						<div>
-							<button class="btn btn-outline-dark" type="submit">Entrar</button>
+							<button class="btn btn-dark" type="submit">Entrar</button>
 						</div>
 					</form>
 				</div>
