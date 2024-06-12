@@ -9,7 +9,7 @@
 		<link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
 	</head>
 	<body>
-		
+
 		<?php require_once "./js/header.php"; ?>
 
 		<div class="body">
